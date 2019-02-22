@@ -1,5 +1,15 @@
 <div class="heroes">
-  <h2>Listado Heroes</h2>
+  <h2>Listado de Heroes</h2>
+      <button (click)="showInput()">
+        + Nuevo Heroe
+      </button>
+      <hr>
+      <div class="inputForm" [class.hide]="!visibility">
+        <input [(ngModel)]="new_name" placeholder="nombre">
+        <button (click)="addHero()">
+          GUARDAR
+        </button>
+      </div>
     <ul >
       <li *ngFor="let hero of heroes">
         <a routerLink="/detail/{{hero.id}}">
