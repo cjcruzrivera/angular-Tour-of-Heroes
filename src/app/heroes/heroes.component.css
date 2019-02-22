@@ -42,3 +42,12 @@ li a:hover {
   font-size: 30px;
   background: #f6f6f6;
 }
+
+.selected {
+  background-color: rgb(79, 81, 82) !important;
+  color: white;
+}
+
+.selected > a {
+  color: rgb(129, 119, 119);
+}

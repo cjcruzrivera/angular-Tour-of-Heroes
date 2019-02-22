@@ -1,0 +1,13 @@
+<div *ngIf="hero" style="float:right; width: max-content">
+
+  <h2>Heroe {{hero.name | uppercase}}</h2>
+  <div><span>Identificación: </span>{{hero.id}}</div>
+  <div><span>Nombre: </span>{{hero.name}}</div>
+
+  <div hidden>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name">
+    </label>
+  </div>
+
+</div>
