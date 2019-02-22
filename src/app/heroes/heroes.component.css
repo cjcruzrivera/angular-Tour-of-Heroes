@@ -1,11 +1,12 @@
 .heroes {
   width: 250px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
   font: 350 30px/1.5 Helvetica, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 
@@ -48,6 +49,23 @@ li a:hover {
   color: white;
 }
 
-.selected > a {
+.selected>a {
   color: rgb(129, 119, 119);
+}
+
+.badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
 }

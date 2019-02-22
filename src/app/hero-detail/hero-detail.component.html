@@ -1,13 +1,15 @@
-<div *ngIf="hero" style="float:right; width: max-content">
+<div *ngIf="hero" style="width: max-content">
 
   <h2>Heroe {{hero.name | uppercase}}</h2>
   <div><span>Identificación: </span>{{hero.id}}</div>
   <div><span>Nombre: </span>{{hero.name}}</div>
 
-  <div hidden>
-    <label>name:
+  <div [class.hide]="!editing">
+    <label>Editar:
       <input [(ngModel)]="hero.name" placeholder="name">
     </label>
   </div>
+  <button (click)="editable()">{{action}}</button>
+  <button (click)="goBack()">Volver</button>
 
 </div>
