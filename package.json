@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "lodash.mergewith": ">=4.6.2"
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
     "@angular/compiler": "~7.2.0",
